@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>🔮 Match Masters! 🔮</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="leftSide">
+      <div class="headerWrapper">
+        <div class="header">
+          <img class="logo" src="https://www.candivore.io/img/games/match-masters/logo.png">
+          <p>Select a difficulty:</p>
+          <div class="buttonWrapper">
+            <button class="difficulty simple">Simple</button>
+            <button class="difficulty easy">Easy</button>
+            <button class="difficulty normal">Normal</button>
+            <button class="difficulty hard">Hard</button>
+            <button class="difficulty expert">Expert</button>
+          </div>
+          <p>Select a game theme:</p>
+          <div class="buttonWrapper">
+            <button class="difficulty simple">Avatar</button>
+            <button class="difficulty easy">Harry Potter</button>
+            <button class="difficulty hard">Christmas</button>
+          </div>
+        </div>
+      </div>
+      <div class="detailContainer">
+        <div class="details">
+          <div class="playerInfo">
+            <span class="profilePicWrapper">
+              <img class="profilePic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
+            </span>
+            <span class="playerData">
+              <p class="name"><span><b>Name</b></span><i class="fa-solid fa-pen-to-square tab"></i></p>
+              <p class="badge"><span><b>Badge</b></span></i></p>
+            </span>
+          </div>
+          <div class="gameInfo">
+            <span class="gameData">
+              <p class="time">Time: <span><b>20</b>s</span></p>
+              <p class="flips">Flips: <span><b>0</b></span></p>
+              <p class="score">Score: <span><b>0</b></span></p>  
+            </span>          
+            <span class="gameOptions">
+              <button>Finish Turn</button>
+              <button>Refresh</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="detailContainer">
+        <div class="details">
+          <div class="playerInfo">
+            <span class="profilePicWrapper">
+              <img class="profilePic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
+            </span>
+            <span class="playerData">
+              <p class="name"><span><b>Name</b></span><i class="fa-solid fa-pen-to-square tab"></i></p>
+              <p class="badge"><span><b>Badge</b></span></i></p>
+            </span>
+          </div>
+          <div class="gameInfo">
+            <span class="gameData">
+              <p class="time">Time: <span><b>20</b>s</span></p>
+              <p class="flips">Flips: <span><b>0</b></span></p>
+              <p class="score">Score: <span><b>0</b></span></p>  
+            </span>          
+            <span class="gameOptions">
+              <button>Finish Turn</button>
+              <button>Refresh</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="gameboard">
+        <ul class="cards">
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ====================================================================== EASY 2 x 2 (4) -->
+    <!-- <div class="middle">
+      <div class="gameboard">
+        <ul class="cards">
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- ====================================================================== EASY 4 x 4 (16) -->
+    <!-- <div class="middle">
+      <div class="gameboard">
+        <ul class="cards">
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>  -->
+    <!-- ====================================================================== Normal 6 x 6 (36) -->
+    <!-- <div class="middleExpert">
+      <div class="gameboard">
+        <ul class="cards">
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-9.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-10.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-11.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-13.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-14.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-15.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-16.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-17.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-18.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-9.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-10.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-11.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-13.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-14.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-15.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-16.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-17.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-18.png" alt="card-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- ====================================================================== HARD 8 x 8 (64) -->
+    <!-- <div class="middle">
+      <div class="gameboard">
+        <ul class="cards">
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-9.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-10.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-11.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-13.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-14.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-15.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-16.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-17.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-18.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-19.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-20.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-21.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-22.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-23.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-24.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-25.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-26.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-27.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-28.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-29.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-30.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-31.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-32.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-9.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-10.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-11.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-13.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-14.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-15.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-16.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-17.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-18.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-19.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-20.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-21.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-22.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-23.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-24.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-25.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-26.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-27.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-28.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-29.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-30.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-31.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-32.png" alt="card-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- ====================================================================== EXPERT 10 x 10 (100) -->
+    <!-- <div class="middle">
+      <div class="gameboard">
+        <ul class="cards">
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-9.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-10.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-11.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-13.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-14.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-15.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-16.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-17.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-18.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-19.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-20.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-21.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-22.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-23.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-24.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-25.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-26.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-27.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-28.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-29.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-30.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-31.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-32.png" alt="card-img">
+            </div>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-33.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-34.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-35.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-36.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-37.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-38.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-39.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-40.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-41.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-42.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-43.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-44.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-45.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-46.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-47.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-48.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-49.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-50.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-7.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-8.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-9.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-10.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-11.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-13.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-14.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-15.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-16.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-17.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-18.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-19.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-20.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-21.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-22.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-23.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-24.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-25.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-26.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-27.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-28.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-29.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-30.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-31.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-32.png" alt="card-img">
+            </div>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-33.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-34.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-35.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-36.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-37.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-38.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-39.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-40.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-41.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-42.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-43.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-44.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-45.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-46.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-47.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-48.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-49.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="cardFace front">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="cardFace back">
+              <img src="images/img-50.png" alt="card-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+
+    <script src="https://kit.fontawesome.com/4d24dccfed.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
