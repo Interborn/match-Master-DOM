@@ -44,6 +44,21 @@ body{
 .tab {
   margin-left: 1vw;
 }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
 
 /* ////////////////////////////////////////////// */
 /* Header Styling */
@@ -207,8 +222,6 @@ body{
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
-  height: calc(100% / 4 - 0.75vw);
-  width: calc(100% / 4 - 0.75vw);
 }
 .cards .card .cardFace{
   width: 100%;

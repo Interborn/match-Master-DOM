@@ -1,10 +1,21 @@
-const cards = document.querySelectorAll(".card"),
-timeTag = document.querySelector(".time b"),
-flipsZeroTag = document.querySelector(".flips0 b"),
-flipsOneTag = document.querySelector(".flips1 b"),
-scoreZeroTag = document.querySelector(".score0 b"),
-scoreOneTag = document.querySelector(".score1 b"),
+const cards = document.querySelectorAll(".card");
+const simpleCards = document.querySelectorAll(".cardSimple");
+const easyCards = document.querySelectorAll(".cardEasy");
+const normalCards = document.querySelectorAll(".cardNormal");
+const hardCards = document.querySelectorAll(".cardHard");
+const expertCards = document.querySelectorAll(".cardExpert");
+timeTag = document.querySelector(".time b");
+flipsZeroTag = document.querySelector(".flips0 b");
+flipsOneTag = document.querySelector(".flips1 b");
+scoreZeroTag = document.querySelector(".score0 b");
+scoreOneTag = document.querySelector(".score1 b");
 restartBtn = document.querySelector(".restart");
+simpleBtn = document.querySelector(".simple");
+easyBtn = document.querySelector(".easy");
+normalBtn = document.querySelector(".normal");
+hardBtn = document.querySelector(".hard");
+expertBtn = document.querySelector(".expert");
+
 
 let maxTime = 20;
 let timeLeft = maxTime;
@@ -124,6 +135,46 @@ function shuffleCard() {
     });
 }
 
+function simpleGamemode() {
+    simpleCards.classList.add(".visible");
+    simpleCards.classList.remove(".hidden");
+    easyCards.classList.add(".hidden");
+    normalCards.classList.add(".hidden");
+    hardCards.classList.add(".hidden");
+    expertCards.classList.add(".hidden");
+}
+function easyGamemode() {
+    easyCards.classList.add(".visible");
+    easyCards.classList.remove(".hidden");
+    simpleCards.classList.add(".hidden");
+    normalCards.classList.add(".hidden");
+    hardCards.classList.add(".hidden");
+    expertCards.classList.add(".hidden");
+}
+function normalGamemode() {
+    normalCards.classList.add(".visible");
+    normalCards.classList.remove(".hidden");
+    simpleCards.classList.add(".hidden");
+    easyCards.classList.add(".hidden");
+    hardCards.classList.add(".hidden");
+    expertCards.classList.add(".hidden");
+}
+function hardGamemode() {
+    hardCards.classList.add(".visible");
+    hardCards.classList.remove(".hidden");
+    simpleCards.classList.add(".hidden");
+    easyCards.classList.add(".hidden");
+    normalCards.classList.add(".hidden");
+    expertCards.classList.add(".hidden");
+}
+function expertGamemode() {
+    expertCards.classList.add(".visible");
+    expertCards.classList.remove(".hidden");
+    simpleCards.classList.add(".hidden");
+    easyCards.classList.add(".hidden");
+    normalCards.classList.add(".hidden");
+    hardCards.classList.add(".hidden");
+}
 
 // Set Active User
 // Prompt User for Difficulty & Theme
@@ -145,6 +196,11 @@ function shuffleCard() {
 shuffleCard();
 
 restartBtn.addEventListener("click", shuffleCard);
+simpleBtn.addEventListener("click", simpleGamemode);
+easyBtn.addEventListener("click", easyGamemode);
+normalBtn.addEventListener("click", normalGamemode);
+hardBtn.addEventListener("click", hardGamemode);
+expertBtn.addEventListener("click", expertGamemode);
 
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
