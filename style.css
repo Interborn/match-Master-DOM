@@ -18,29 +18,44 @@ body{
   align-items: center;
   justify-content: center;
   background: #6563ff;
+  /* background-image: url(https://img.freepik.com/premium-vector/christmas-background-various-snowflakes-holiday-symbols-red-colors_444390-5256.jpg?w=1480);
+  background-size: cover; */
   min-height: 100vh;
 }
 .middle{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #6563ff;
+  background: transparent;
   flex-direction: column;
 }
 .leftSide{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #6563ff;
+  background: transparent;
   flex-direction: column;
 
 }
 ::selection{
   color: #fff;
-  background: #6563ff;
+  background: transparent;
 }
 .tab {
   margin-left: 1vw;
+}
+.matchDetails {
+  width: 20vw;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background: #fff;
+  height: calc(100% / 4 - 30px);
+  justify-content: space-between;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-content: center;
+  flex-direction: row;
 }
 
 /* ////////////////////////////////////////////// */
@@ -107,20 +122,20 @@ body{
   align-content: center;
   flex-direction: column;
 }
-.details p{
+.details p, .matchDetails p{
   font-size: 18px;
   height: 17px;
   padding-right: 18px;
   margin: 9px;
   /* border-right: 1px solid #ccc; */
 }
-.details p span{
+.details p span, .matchDetails p span{
   margin-left: 8px;
 }
-.details p b{
+.details p b, .matchDetails p b{
   font-weight: 500;
 }
-.details button{
+.details button, .matchDetails button{
   cursor: pointer;
   font-size: 14px;
   color: #6563ff;
@@ -130,7 +145,7 @@ body{
   border: 2px solid #6563ff;
   transition: 0.3s ease;
 }
-.details button:hover{
+.details button:hover, .matchDetails button:hover{
   color: #fff;
   background: #6563ff;
 }
@@ -149,22 +164,16 @@ body{
   align-items: center;
   margin: 0.5vw;
 }
+.gameData, .gameData p{
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
 .gameInfo {
   display: flex;
+  align-content: center;
   column-gap: 1.8vw;
-}
-.gameData {
-  display: flex;
-  flex-direction: column;
-  justify-items: flex-start;
-}
-.gameOptions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.gameOptions button{
-  margin: 0.3vw;
+  margin: 0.7vw 0vw;
 }
 
 /* ////////////////////////////////////////////// */
@@ -194,8 +203,8 @@ body{
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
-  height: calc(100% / 2 - 1vw);
-  width: calc(100% / 2 - 0.6vw);
+  height: calc(100% / 4 - 0.75vw);
+  width: calc(100% / 4 - 0.75vw);
 }
 .cards .card .cardFace{
   width: 100%;
@@ -286,6 +295,7 @@ body{
   }
 } */
 /* ///////////////////////////////////////////////////////////////////////////// */
+/* Difficulty Button Styling*/
 /* Simple Styling 2 x 2 (4)*/
 .cardsSimple .cardSimple{
   height: calc(100% / 2 - 1vw);
@@ -311,3 +321,5 @@ body{
   height: calc(100% / 10 - 0.4vw);
   width: calc(100% / 10 - 0.4vw);
 }
+/* ///////////////////////////////////////////////////////////////////////////// */
+/* Game Theme Button Styling*/

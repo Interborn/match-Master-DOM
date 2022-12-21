@@ -11,7 +11,7 @@
       <div class="headerWrapper">
         <div class="header">
           <img class="logo" src="https://www.candivore.io/img/games/match-masters/logo.png">
-          <p>Select a difficulty:</p>
+          <p><b>Select a difficulty:</b></p>
           <div class="buttonWrapper">
             <button class="difficulty simple">Simple</button>
             <button class="difficulty easy">Easy</button>
@@ -19,13 +19,23 @@
             <button class="difficulty hard">Hard</button>
             <button class="difficulty expert">Expert</button>
           </div>
-          <p>Select a game theme:</p>
+          <p><b>Select a game theme:</b></p>
           <div class="buttonWrapper">
             <button class="difficulty simple">Avatar</button>
             <button class="difficulty easy">Harry Potter</button>
             <button class="difficulty hard">Christmas</button>
           </div>
         </div>
+        <div class="detailContainer">
+          <div class="matchDetails">
+              <span class="gameData">
+                <p class="time">Time: <span><b>20</b>s</span></p>   
+              </span> 
+              <span class="gameOptions">
+                <button class="restart">Restart Game</button>
+              </span>
+          </div>
+        </div>
       </div>
       <div class="detailContainer">
         <div class="details">
@@ -39,14 +49,11 @@
             </span>
           </div>
           <div class="gameInfo">
-            <span class="gameData">
-              <p class="time">Time: <span><b>20</b>s</span></p>
-              <p class="flips">Flips: <span><b>0</b></span></p>
-              <p class="score">Score: <span><b>0</b></span></p>  
-            </span>          
-            <span class="gameOptions">
-              <button>Finish Turn</button>
-              <button>Refresh</button>
+            <span class="turnData">
+              <p class="flips0">Turns: <span><b>0</b></span></p>
+            </span>
+            <span class="matchesData">
+              <p class="score0">Score: <span><b>0</b></span></p>  
             </span>
           </div>
         </div>
@@ -63,20 +70,17 @@
             </span>
           </div>
           <div class="gameInfo">
-            <span class="gameData">
-              <p class="time">Time: <span><b>20</b>s</span></p>
-              <p class="flips">Flips: <span><b>0</b></span></p>
-              <p class="score">Score: <span><b>0</b></span></p>  
-            </span>          
-            <span class="gameOptions">
-              <button>Finish Turn</button>
-              <button>Refresh</button>
+            <span class="turnData">
+              <p class="flips1">Turns: <span><b>0</b></span></p>
+            </span>
+            <span class="matchesData">
+              <p class="score1">Score: <span><b>0</b></span></p>  
             </span>
           </div>
         </div>
       </div>
     </div>
-    <div class="middle">
+    <!-- <div class="middle">
       <div class="gameboard">
         <ul class="cards">
           <li class="card">
@@ -113,7 +117,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <!-- ====================================================================== EASY 2 x 2 (4) -->
     <!-- <div class="middle">
       <div class="gameboard">
@@ -154,7 +158,7 @@
       </div>
     </div> -->
     <!-- ====================================================================== EASY 4 x 4 (16) -->
-    <!-- <div class="middle">
+    <div class="middle">
       <div class="gameboard">
         <ul class="cards">
           <li class="card">
@@ -288,7 +292,7 @@
           </li>
         </ul>
       </div>
-    </div>  -->
+    </div> 
     <!-- ====================================================================== Normal 6 x 6 (36) -->
     <!-- <div class="middleExpert">
       <div class="gameboard">
