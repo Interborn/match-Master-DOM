@@ -242,7 +242,7 @@ body{
   transform: rotateY(-180deg);
 }
 .card .back img{
-  max-width: 60px;
+  max-width: 5vw;
 }
 .card.flip .front{
   transform: rotateY(180deg);

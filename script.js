@@ -1,9 +1,16 @@
 const cards = document.querySelectorAll(".card");
+const simpleCards = document.querySelectorAll(".cardSimple");
+const easyCards = document.querySelectorAll(".cardEasy");
+const normalCards = document.querySelectorAll(".cardNormal");
+const hardCards = document.querySelectorAll(".cardHard");
+const expertCards = document.querySelectorAll(".cardExpert");
+
 const simpleGameboard = document.querySelector(".gameboardSimple");
 const easyGameboard = document.querySelector(".gameboardEasy");
 const normalGameboard = document.querySelector(".gameboardNormal");
 const hardGameboard = document.querySelector(".gameboardHard");
 const expertGameboard = document.querySelector(".gameboardExpert");
+
 timeTag = document.querySelector(".time b");
 flipsZeroTag = document.querySelector(".flips0 b");
 flipsOneTag = document.querySelector(".flips1 b");
@@ -16,7 +23,7 @@ normalBtn = document.querySelector(".normal");
 hardBtn = document.querySelector(".hard");
 expertBtn = document.querySelector(".expert");
 
-let maxTime = 20;
+let maxTime = 30;
 let timeLeft = maxTime;
 let flipsZero = 0;
 let flipsOne = 0;
@@ -139,29 +146,69 @@ function shuffleCard() {
     let arr = [];  
     if (gamemode === "Simple") {
         arr = [1, 2, 1, 2];
+        // Randomly Assign Spots
+        arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+        simpleCards.forEach((card, index) => {
+            card.classList.remove("flip");
+            let imgTag = card.querySelector(".back img");
+            setTimeout(() => {
+                imgTag.src = `images/img-${arr[index]}.png`;
+            }, 500);
+            card.addEventListener("click", flipCard);
+        });
     }
     if (gamemode === "Easy") {
         arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
+        // Randomly Assign Spots
+        arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+        easyCards.forEach((card, index) => {
+            card.classList.remove("flip");
+            let imgTag = card.querySelector(".back img");
+            setTimeout(() => {
+                imgTag.src = `images/img-${arr[index]}.png`;
+            }, 500);
+            card.addEventListener("click", flipCard);
+        });
     }
     if (gamemode === "Normal") {
         arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+        // Randomly Assign Spots
+        arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+        normalCards.forEach((card, index) => {
+            card.classList.remove("flip");
+            let imgTag = card.querySelector(".back img");
+            setTimeout(() => {
+                imgTag.src = `images/img-${arr[index]}.png`;
+            }, 500);
+            card.addEventListener("click", flipCard);
+        });
     }
     if (gamemode === "Hard") {
         arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32];
+        // Randomly Assign Spots
+        arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+        hardCards.forEach((card, index) => {
+            card.classList.remove("flip");
+            let imgTag = card.querySelector(".back img");
+            setTimeout(() => {
+                imgTag.src = `images/img-${arr[index]}.png`;
+            }, 500);
+            card.addEventListener("click", flipCard);
+        });
     }
     if (gamemode === "Expert") {
         arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,];
+        // Randomly Assign Spots
+        arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+        expertCards.forEach((card, index) => {
+            card.classList.remove("flip");
+            let imgTag = card.querySelector(".back img");
+            setTimeout(() => {
+                imgTag.src = `images/img-${arr[index]}.png`;
+            }, 500);
+            card.addEventListener("click", flipCard);
+        });
     }
-    // Randomly Assign Spots
-    arr.sort(() => Math.random() > 0.5 ? 1 : -1);
-    cards.forEach((card, index) => {
-        card.classList.remove("flip");
-        let imgTag = card.querySelector(".back img");
-        setTimeout(() => {
-            imgTag.src = `images/img-${arr[index]}.png`;
-        }, 500);
-        card.addEventListener("click", flipCard);
-    });
 }
 // Change Gamemode Functions (Simple, Easy, Normal, Hard, Expert)
 function simpleGamemode() {
