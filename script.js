@@ -22,6 +22,10 @@ easyBtn = document.querySelector(".easy");
 normalBtn = document.querySelector(".normal");
 hardBtn = document.querySelector(".hard");
 expertBtn = document.querySelector(".expert");
+atlaBtn = document.querySelector(".atla");
+hpBtn = document.querySelector(".hp");
+gemsBtn = document.querySelector(".gems");
+christmasBtn = document.querySelector(".christmas");
 
 let maxTime = 30;
 let timeLeft = maxTime;
@@ -34,7 +38,7 @@ let disableDeck = false;
 let isPlaying = false;
 let isActiveZero = 0;
 let isActiveOne = 0;
-let cardOne, cardTwo, timer, gamemode;
+let cardOne, cardTwo, timer, gamemode, theme;
 
 // Initialize Timer and Syncronize with FE
 function initTimer() {
@@ -152,7 +156,7 @@ function shuffleCard() {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back img");
             setTimeout(() => {
-                imgTag.src = `images/img-${arr[index]}.png`;
+                imgTag.src = `${theme}/img-${arr[index]}.svg`;
             }, 500);
             card.addEventListener("click", flipCard);
         });
@@ -165,7 +169,7 @@ function shuffleCard() {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back img");
             setTimeout(() => {
-                imgTag.src = `images/img-${arr[index]}.png`;
+                imgTag.src = `${theme}/img-${arr[index]}.svg`;
             }, 500);
             card.addEventListener("click", flipCard);
         });
@@ -178,7 +182,7 @@ function shuffleCard() {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back img");
             setTimeout(() => {
-                imgTag.src = `images/img-${arr[index]}.png`;
+                imgTag.src = `${theme}/img-${arr[index]}.svg`;
             }, 500);
             card.addEventListener("click", flipCard);
         });
@@ -191,7 +195,7 @@ function shuffleCard() {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back img");
             setTimeout(() => {
-                imgTag.src = `images/img-${arr[index]}.png`;
+                imgTag.src = `${theme}/img-${arr[index]}.svg`;
             }, 500);
             card.addEventListener("click", flipCard);
         });
@@ -204,7 +208,7 @@ function shuffleCard() {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back img");
             setTimeout(() => {
-                imgTag.src = `images/img-${arr[index]}.png`;
+                imgTag.src = `${theme}/img-${arr[index]}.svg`;
             }, 500);
             card.addEventListener("click", flipCard);
         });
@@ -252,11 +256,29 @@ function expertGamemode() {
     gamemode = "Expert";
 }
 
+function gemsTheme() {
+    theme = "gems";
+    shuffleCard();
+}
+function hpTheme() {
+    theme = "hp";
+    shuffleCard();
+}
+function christmasTheme() {
+    theme = "christmas";
+    shuffleCard();
+}
+function atlaTheme() {
+    theme = "atla";
+    shuffleCard();
+}
+
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
 
 
 normalGamemode();
+christmasTheme();
 shuffleCard();
 
 restartBtn.addEventListener("click", shuffleCard);
@@ -265,6 +287,10 @@ easyBtn.addEventListener("click", easyGamemode);
 normalBtn.addEventListener("click", normalGamemode);
 hardBtn.addEventListener("click", hardGamemode);
 expertBtn.addEventListener("click", expertGamemode);
+gemsBtn.addEventListener("click", gemsTheme);
+atlaBtn.addEventListener("click", atlaTheme);
+hpBtn.addEventListener("click", hpTheme);
+christmasBtn.addEventListener("click", christmasTheme);
 
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
