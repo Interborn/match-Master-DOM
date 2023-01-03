@@ -11,6 +11,31 @@ const normalGameboard = document.querySelector(".gameboardNormal");
 const hardGameboard = document.querySelector(".gameboardHard");
 const expertGameboard = document.querySelector(".gameboardExpert");
 
+const body = document.querySelector("body");
+const difficultyButtons = document.querySelectorAll(".difficulty");
+const themeButtons = document.querySelectorAll(".theme");
+const cardFace = document.querySelectorAll(".cardFace");
+const cardss = document.querySelectorAll(".cards");
+const details = document.querySelectorAll(".details");
+const matchDetails = document.querySelector(".matchDetails");
+const detailContainers = document.querySelectorAll(".detailContainer");
+const gameboards = document.querySelectorAll(".gameboard");
+const texts = document.querySelectorAll(".text");
+const titles = document.querySelectorAll(".title");
+const logo = document.querySelector(".logo");
+const gems = document.querySelector(".gems");
+const atla = document.querySelector(".atla");
+const hp = document.querySelector(".hp");
+const christmas = document.querySelector(".christmas");
+const simple = document.querySelector(".simple");
+const easy = document.querySelector(".easy");
+const normal = document.querySelector(".normal");
+const hard = document.querySelector(".hard");
+const expert = document.querySelector(".expert");
+
+const userZero = document.querySelector(".userZeroContainer");
+const userOne = document.querySelector(".userOneContainer");
+
 timeTag = document.querySelector(".time b");
 flipsZeroTag = document.querySelector(".flips0 b");
 flipsOneTag = document.querySelector(".flips1 b");
@@ -256,20 +281,241 @@ function expertGamemode() {
     gamemode = "Expert";
 }
 
+function clearThemes() {
+    body.classList.remove("christmasBody");
+    matchDetails.classList.remove("christmasMatchDetails");
+    difficultyButtons.forEach(button => {
+        button.classList.remove("christmasDifficulty");
+    });
+    themeButtons.forEach(button => {
+        button.classList.remove("christmasTheme");
+    });
+    cards.forEach(card => {
+        card.classList.remove("christmasCard");
+    });
+    cardss.forEach(card => {
+        card.classList.remove("christmasCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.remove("christmasCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.remove("christmasDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.remove("christmasDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.remove("christmasGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.remove("christmasText")
+    })
+    body.classList.remove("atlaBody");
+    matchDetails.classList.remove("atlaMatchDetails");
+    difficultyButtons.forEach(button => {
+        button.classList.remove("atlaDifficulty");
+    });
+    themeButtons.forEach(button => {
+        button.classList.remove("atlaTheme");
+    });
+    cards.forEach(card => {
+        card.classList.remove("atlaCard");
+    });
+    cardss.forEach(card => {
+        card.classList.remove("atlaCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.remove("atlaCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.remove("atlaDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.remove("atlaDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.remove("atlaGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.remove("atlaText")
+    })
+    body.classList.remove("gemsBody");
+    matchDetails.classList.remove("gemsMatchDetails");
+    difficultyButtons.forEach(button => {
+        button.classList.remove("gemsDifficulty");
+    });
+    themeButtons.forEach(button => {
+        button.classList.remove("gemsTheme");
+    });
+    cards.forEach(card => {
+        card.classList.remove("gemsCard");
+    });
+    cardss.forEach(card => {
+        card.classList.remove("gemsCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.remove("gemsCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.remove("gemsDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.remove("gemsDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.remove("gemsGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.remove("gemsText")
+    })
+    body.classList.remove("hpBody");
+    matchDetails.classList.remove("hpMatchDetails");
+    simple.classList.remove("griffButtons");
+    easy.classList.remove("huffButtons");
+    normal.classList.remove("ravButtons");
+    hard.classList.remove("slyButtons");
+    expert.classList.remove("griffButtons");
+    gems.classList.remove("huffButtons");
+    atla.classList.remove("ravButtons");
+    hp.classList.remove("griffButtons");
+    christmas.classList.remove("slyButtons");
+    cards.forEach(card => {
+        card.classList.remove("hpCard");
+    });
+    cardss.forEach(card => {
+        card.classList.remove("hpCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.remove("hpCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.remove("hpDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.remove("hpDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.remove("hpGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.remove("hpText");
+    })
+    titles.forEach(title => {
+        title.classList.remove("hpTitle");
+    })
+}
 function gemsTheme() {
+    clearThemes();
     theme = "gems";
+    body.classList.add("gemsBody");
+    matchDetails.classList.add("gemsMatchDetails");
+    difficultyButtons.forEach(button => {
+        button.classList.add("gemsDifficulty");
+    });
+    themeButtons.forEach(button => {
+        button.classList.add("gemsTheme");
+    });
+    cards.forEach(card => {
+        card.classList.add("gemsCard");
+    });
+    cardss.forEach(card => {
+        card.classList.add("gemsCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.add("gemsCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.add("gemsDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.add("gemsDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.add("gemsGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.add("gemsText")
+    })
     shuffleCard();
 }
 function hpTheme() {
+    clearThemes();
     theme = "hp";
-    shuffleCard();
-}
-function christmasTheme() {
-    theme = "christmas";
+    body.classList.add("hpBody");
+    matchDetails.classList.add("hpMatchDetails");
+    simple.classList.add("griffButtons");
+    easy.classList.add("huffButtons");
+    normal.classList.add("ravButtons");
+    hard.classList.add("slyButtons");
+    expert.classList.add("griffButtons");
+    gems.classList.add("huffButtons");
+    atla.classList.add("ravButtons");
+    hp.classList.add("griffButtons");
+    christmas.classList.add("slyButtons");
+    cards.forEach(card => {
+        card.classList.add("hpCard");
+    });
+    cardss.forEach(card => {
+        card.classList.add("hpCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.add("hpCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.add("hpDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.add("hpDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.add("hpGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.add("hpText");
+    })
+    titles.forEach(title => {
+        title.classList.add("hpTitle");
+    })
     shuffleCard();
 }
 function atlaTheme() {
+    clearThemes();
     theme = "atla";
+    shuffleCard();
+}
+function christmasTheme() {
+    clearThemes();
+    theme = "christmas";
+    body.classList.add("christmasBody");
+    matchDetails.classList.add("christmasMatchDetails");
+    difficultyButtons.forEach(button => {
+        button.classList.add("christmasDifficulty");
+    });
+    themeButtons.forEach(button => {
+        button.classList.add("christmasTheme");
+    });
+    cards.forEach(card => {
+        card.classList.add("christmasCard");
+    });
+    cardss.forEach(card => {
+        card.classList.add("christmasCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.add("christmasCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.add("christmasDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.add("christmasDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.add("christmasGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.add("christmasText");
+    })
     shuffleCard();
 }
 
@@ -278,7 +524,7 @@ function atlaTheme() {
 
 
 normalGamemode();
-christmasTheme();
+hpTheme();
 shuffleCard();
 
 restartBtn.addEventListener("click", shuffleCard);

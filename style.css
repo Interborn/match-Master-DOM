@@ -17,7 +17,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #6563ff;
+  /* background: #6563ff; */
   /* background-image: url(https://img.freepik.com/premium-vector/christmas-background-various-snowflakes-holiday-symbols-red-colors_444390-5256.jpg?w=1480);
   background-size: cover; */
   min-height: 100vh;
@@ -94,7 +94,7 @@ body{
   color: #fff;
   border-radius: 4px;
   padding: 4px 11px;
-  background: #6563ff;
+  /* background: #6563ff; */
   border: 2px solid #fff;
   transition: 0.3s ease;
   margin: 0.15vw;
@@ -154,7 +154,7 @@ body{
 .details p b, .matchDetails p b{
   font-weight: 500;
 }
-.details button, .matchDetails button{
+.matchDetails button{
   cursor: pointer;
   font-size: 14px;
   color: #6563ff;
@@ -311,6 +311,12 @@ body{
     background: #6563ff;
   }
 } */
+
+
+.activeContainer {
+  box-shadow: 0px 5px 27px -10px rgba(255,255,255,0.75) !important;
+}
+
 /* ///////////////////////////////////////////////////////////////////////////// */
 /* Difficulty Button Styling*/
 /* Simple Styling 2 x 2 (4)*/
@@ -339,4 +345,173 @@ body{
   width: calc(100% / 10 - 0.4vw);
 }
 /* ///////////////////////////////////////////////////////////////////////////// */
-/* Game Theme Button Styling*/
+/* Game Theme Styling*/
+.gemsBody {
+  background: #6563ff;
+}
+.gemsDifficulty {
+  background: #6563ff;
+}
+.gemsTheme {
+  background: #6563ff;
+}
+.gemsCards .gemsCard .gemsCardFace {
+  background: #fff !Important;
+}
+.gemsDetails, .gemsMatchDetails {
+  background: #fff !Important;
+  border: 2px solid transparent !important;
+}
+.gemsDetails button:hover, .gemsMatchDetails button:hover {
+  color: #fff;
+  background: #6563ff;
+}
+.gemsMatchDetails button {
+  color: #6563ff;
+  background: #fff;
+  border: 2px solid #6563ff;
+}
+.gemsDifficulty:hover, .gemsDifficulty:active {
+  color: #6563ff;
+  background: #fff;
+}
+.gemsTheme:hover, .gemsTheme:active {
+  color: #6563ff;
+  background: #fff;
+}
+.gemsGameboard, .gemsDetailContainer {
+  border: 4px solid transparent !important;
+}
+.christmasText {
+  color: #000 !important;
+}
+
+
+.atlaBody {
+  background: #6563ff;
+}
+
+
+.hpBody {
+  background-image: url("backgrounds/maradersmap.jpg") !important;
+  background-size: center-bottom;
+}
+.griffButtons {
+  background: #000 !important;
+  border-color: #d63939 !important;
+  color: #d63939 !important;
+}
+.huffButtons {
+  background: #000 !important;
+  border-color: #eac90e !important;
+  color: #eac90e !important;
+}
+.slyButtons {
+  background: #000 !important;
+  border-color: #17af24 !important;
+  color: #17af24 !important;
+}
+.ravButtons {
+  background: #000 !important;
+  border-color: #3d00f4 !important;
+  color: #3d00f4 !important;
+}
+.hpTheme {
+  background: #000 !important;
+  border-color: #d63939 !important;
+  color: #d63939 !important;
+}
+.hpCards .hpCard .hpCardFace {
+  background-image: url("backgrounds/parchment.webp") !important;
+  background-position: center;
+  box-shadow: -1px 10px 27px -16px rgba(0,0,0,0.7);
+}
+.hpMatchDetails, .hpDetails {
+  background-image: url("backgrounds/parchment.webp") !important;
+  background-size: cover;
+  border: 2px solid transparent !important;
+}
+.hpDetails button:hover, .hpMatchDetails button:hover{
+  color: #fff !important;
+  background: #2d160bef !important;
+  filter: blur(1px);
+}
+.hpMatchDetails button{
+  color: #2d160bef !important;
+  background: transparent !important;
+  border: 2px solid #2d160bef !important;
+}
+.griffButtons:hover, .griffButton:active, .slyButtons:hover, .slyButton:active, .huffButtons:hover, .huffButton:active, .ravButtons:hover, .ravButton:active {
+  color: #2d160bef !important;
+  background: transparent !important;
+  filter: blur(1px);
+}
+.hpTheme:hover, .hpTheme:active {
+  color: #2d160bef !important;
+  background: transparent !important;
+  filter: blur(1px);
+}
+.hpGameboard {
+  background-image: url("backgrounds/houses.png") !important;
+  background-position: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+  border: 4px solid transparent !important;
+}
+.hpDetailContainer {
+  background: #2d160bef !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+  border: 4px solid transparent !important;
+}
+.hpText {
+  color: #000 !important;
+}
+.hpTitle {
+  color: rgb(255, 255, 255) !important;
+  text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
+}
+
+
+.christmasBody {
+  background-image: url("backgrounds/christmas.jpg") !important;
+  background-size: cover;
+}
+.christmasDifficulty {
+  background: #790000 !important;
+}
+.christmasTheme {
+  background: #710000 !important;
+}
+.christmasCards .christmasCard .christmasCardFace {
+  background: #2ca841 !important;
+  box-shadow: -1px 10px 27px -16px rgba(0,0,0,0.7);
+}
+.christmasDetails, .christmasMatchDetails {
+  background: #2ca841 !important;
+  border: 2px solid #790000 !important;
+}
+.christmasDetails button:hover, .christmasMatchDetails button:hover{
+  color: #710000 !important;
+  background: #2ca841 !important;
+  border: 2px solid #710000 !important;
+}
+.christmasMatchDetails button{
+  color: #fff !important;
+  background: #710000 !important;
+  border: 2px solid #fff !important;
+}
+.christmasDifficulty:hover, .christmasDifficulty:active {
+  color: #790000 !important;
+  background: #fff !important;
+}
+.christmasTheme:hover, .christmasTheme:active {
+  color: #710000 !important;
+  background: #fff !important;
+}
+.christmasGameboard, .christmasDetailContainer {
+  background: #d63939 !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+  border: 4px solid #790000 !important;
+}
+.christmasText {
+  color: #fff !important;
+}
