@@ -345,7 +345,7 @@ body{
   width: calc(100% / 10 - 0.4vw);
 }
 /* ///////////////////////////////////////////////////////////////////////////// */
-/* Game Theme Styling*/
+/* Gems Game Theme Styling*/
 .gemsBody {
   background: #6563ff;
 }
@@ -386,12 +386,78 @@ body{
   color: #000 !important;
 }
 
-
+/* Avatar: the Last Airbender Game Theme Styling*/
 .atlaBody {
-  background: #6563ff;
+  background-image: url("backgrounds/atlaMap.png") !important;
+  background-size: 110%;
+  background-position: center;
+}
+.atlaAir {
+  color: #ffc400 !important;
+  text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
+  background-image: url("backgrounds/air.png") !important;
+  background-position: 0%;
+  background-size: cover;
+  border: 2px solid #bc9513 !important;
+}
+.atlaFire {
+  color: #fff !important;
+  text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
+  background-image: url("backgrounds/fire.png") !important;
+  background-position: 100%;
+  background-size: cover;
+  border: 2px solid #961118 !important;
+}
+.atlaEarth {
+  color: #fff !important;
+  text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
+  background-image: url("backgrounds/earth.png") !important;
+  background-position: 100%;
+  background-size: cover;
+  border: 2px solid #1d5a0b !important;
+}
+.atlaWater {
+  color: #02b5f6 !important;
+  text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
+  background-image: url("backgrounds/water.png") !important;
+  background-position: 100%;
+  background-size: cover;
+  border: 2px solid #0b3a5a !important;
+}
+.atlaCards .atlaCard .atlaCardFace {
+  background-image: url("backgrounds/papertexture.jpg") !important;
+  background-position: cover;
+  box-shadow: -1px 10px 27px -16px rgba(0,0,0,0.7);
+}
+.atlaDetails, .atlaMatchDetails {
+  background-image: url("backgrounds/papertexture.jpg") !important;
+  background-position: cover;
+  border: 2px solid #7B6846 !important;
+}
+.atlaDetails button:hover, .atlaMatchDetails button:hover{
+  color: #CEB08A !important;
+  background: #313021 !important;
+  border: 2px solid #313021 !important;
+}
+.atlaMatchDetails button{
+  color: #313021 !important;
+  background: transparent !important;
+  border: 2px solid #313021 !important;
+}
+.atlaGameboard, .atlaDetailContainer {
+  background: #313021 !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+  border: 4px solid #7B6846 !important;
+}
+.atlaText {
+  color: #000 !important;
+}
+.atlaTitle {
+  color: #ece6dd !important;
+  text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
 }
 
-
+/* Harry Potter Game Theme Styling*/
 .hpBody {
   background-image: url("backgrounds/maradersmap.jpg") !important;
   background-size: center-bottom;
@@ -417,29 +483,31 @@ body{
   color: #3d00f4 !important;
 }
 .hpTheme {
-  background: #000 !important;
+  background: rgb(80, 37, 37) !important;
   border-color: #d63939 !important;
   color: #d63939 !important;
 }
 .hpCards .hpCard .hpCardFace {
-  background-image: url("backgrounds/parchment.webp") !important;
+  background-image: url("backgrounds/slatetexture.webp") !important;
   background-position: center;
+  /* background-size: 200%; */
   box-shadow: -1px 10px 27px -16px rgba(0,0,0,0.7);
 }
 .hpMatchDetails, .hpDetails {
-  background-image: url("backgrounds/parchment.webp") !important;
+  background-image: url("backgrounds/slatetexture.webp") !important;
   background-size: cover;
   border: 2px solid transparent !important;
 }
-.hpDetails button:hover, .hpMatchDetails button:hover{
-  color: #fff !important;
-  background: #2d160bef !important;
-  filter: blur(1px);
+.hpMatchDetails button:hover{
+  color: #2d160bef !important;
+  background: #E9D3AC !important;
+  filter: blur(0px);
 }
 .hpMatchDetails button{
-  color: #2d160bef !important;
+  color: #E9D3AC !important;
   background: transparent !important;
-  border: 2px solid #2d160bef !important;
+  border: 2px solid #E9D3AC !important;
+  filter: blur(2px);
 }
 .griffButtons:hover, .griffButton:active, .slyButtons:hover, .slyButton:active, .huffButtons:hover, .huffButton:active, .ravButtons:hover, .ravButton:active {
   color: #2d160bef !important;
@@ -463,14 +531,14 @@ body{
   border: 4px solid transparent !important;
 }
 .hpText {
-  color: #000 !important;
+  color: #E9D3AC !important;
 }
 .hpTitle {
-  color: rgb(255, 255, 255) !important;
+  color: #fff8ed !important;
   text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
 }
 
-
+/* Christmas Game Theme Styling*/
 .christmasBody {
   background-image: url("backgrounds/christmas.jpg") !important;
   background-size: cover;
@@ -514,4 +582,8 @@ body{
 }
 .christmasText {
   color: #fff !important;
+}
+.christmasTitle {
+  color: #fff !important;
+  text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
 }

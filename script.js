@@ -282,127 +282,34 @@ function expertGamemode() {
 }
 
 function clearThemes() {
-    body.classList.remove("christmasBody");
-    matchDetails.classList.remove("christmasMatchDetails");
+    body.classList.remove("gemsBody", "hpBody", "atlaBody", "christmasBody");
+    matchDetails.classList.remove("gemsMatchDetails", "hpMatchDetails", "atlaMatchDetails", "christmasMatchDetails");
     difficultyButtons.forEach(button => {
-        button.classList.remove("christmasDifficulty");
+        button.classList.remove("gemsDifficulty", "christmasDifficulty", "griffButtons", "huffButtons", "ravButtons", "slyButtons", "atlaWater", "atlaAir", "atlaEarth", "atlaFire");
     });
     themeButtons.forEach(button => {
-        button.classList.remove("christmasTheme");
+        button.classList.remove("gemsTheme", "christmasTheme", "griffButtons", "huffButtons", "ravButtons", "slyButtons", "atlaWater", "atlaAir", "atlaEarth", "atlaFire");
     });
     cards.forEach(card => {
-        card.classList.remove("christmasCard");
+        card.classList.remove("gemsCard", "hpCard", "atlaCard", "christmasCard");
     });
     cardss.forEach(card => {
-        card.classList.remove("christmasCards");
+        card.classList.remove("gemsCards", "hpCards", "atlaCards", "christmasCards");
     });
     cardFace.forEach(card => {
-        card.classList.remove("christmasCardFace");
+        card.classList.remove("gemsCardFace", "hpCardFace", "atlaCardFace", "christmasCardFace");
     });
     details.forEach(detail => {
-        detail.classList.remove("christmasDetails")
+        detail.classList.remove("gemsDetails", "hpDetails", "atlaDetails", "christmasDetails")
     });
     detailContainers.forEach(container => {
-        container.classList.remove("christmasDetailContainer");
+        container.classList.remove("gemsDetailContainer", "hpDetailContainer", "atlaDetailContainer", "christmasDetailContainer");
     })
     gameboards.forEach(gameboard => {
-        gameboard.classList.remove("christmasGameboard");
+        gameboard.classList.remove("gemsGameboard", "hpGameboard", "atlaGameboard", "christmasGameboard");
     })
     texts.forEach(text => {
-        text.classList.remove("christmasText")
-    })
-    body.classList.remove("atlaBody");
-    matchDetails.classList.remove("atlaMatchDetails");
-    difficultyButtons.forEach(button => {
-        button.classList.remove("atlaDifficulty");
-    });
-    themeButtons.forEach(button => {
-        button.classList.remove("atlaTheme");
-    });
-    cards.forEach(card => {
-        card.classList.remove("atlaCard");
-    });
-    cardss.forEach(card => {
-        card.classList.remove("atlaCards");
-    });
-    cardFace.forEach(card => {
-        card.classList.remove("atlaCardFace");
-    });
-    details.forEach(detail => {
-        detail.classList.remove("atlaDetails")
-    });
-    detailContainers.forEach(container => {
-        container.classList.remove("atlaDetailContainer");
-    })
-    gameboards.forEach(gameboard => {
-        gameboard.classList.remove("atlaGameboard");
-    })
-    texts.forEach(text => {
-        text.classList.remove("atlaText")
-    })
-    body.classList.remove("gemsBody");
-    matchDetails.classList.remove("gemsMatchDetails");
-    difficultyButtons.forEach(button => {
-        button.classList.remove("gemsDifficulty");
-    });
-    themeButtons.forEach(button => {
-        button.classList.remove("gemsTheme");
-    });
-    cards.forEach(card => {
-        card.classList.remove("gemsCard");
-    });
-    cardss.forEach(card => {
-        card.classList.remove("gemsCards");
-    });
-    cardFace.forEach(card => {
-        card.classList.remove("gemsCardFace");
-    });
-    details.forEach(detail => {
-        detail.classList.remove("gemsDetails")
-    });
-    detailContainers.forEach(container => {
-        container.classList.remove("gemsDetailContainer");
-    })
-    gameboards.forEach(gameboard => {
-        gameboard.classList.remove("gemsGameboard");
-    })
-    texts.forEach(text => {
-        text.classList.remove("gemsText")
-    })
-    body.classList.remove("hpBody");
-    matchDetails.classList.remove("hpMatchDetails");
-    simple.classList.remove("griffButtons");
-    easy.classList.remove("huffButtons");
-    normal.classList.remove("ravButtons");
-    hard.classList.remove("slyButtons");
-    expert.classList.remove("griffButtons");
-    gems.classList.remove("huffButtons");
-    atla.classList.remove("ravButtons");
-    hp.classList.remove("griffButtons");
-    christmas.classList.remove("slyButtons");
-    cards.forEach(card => {
-        card.classList.remove("hpCard");
-    });
-    cardss.forEach(card => {
-        card.classList.remove("hpCards");
-    });
-    cardFace.forEach(card => {
-        card.classList.remove("hpCardFace");
-    });
-    details.forEach(detail => {
-        detail.classList.remove("hpDetails")
-    });
-    detailContainers.forEach(container => {
-        container.classList.remove("hpDetailContainer");
-    })
-    gameboards.forEach(gameboard => {
-        gameboard.classList.remove("hpGameboard");
-    })
-    texts.forEach(text => {
-        text.classList.remove("hpText");
-    })
-    titles.forEach(title => {
-        title.classList.remove("hpTitle");
+        text.classList.remove("gemsText", "hpText", "atlaText", "christmasText")
     })
 }
 function gemsTheme() {
@@ -436,6 +343,9 @@ function gemsTheme() {
     })
     texts.forEach(text => {
         text.classList.add("gemsText")
+    })
+    titles.forEach(title => {
+        title.classList.add("hpTitle", "atlaTitle", "christmasTitle");
     })
     shuffleCard();
 }
@@ -482,6 +392,41 @@ function hpTheme() {
 function atlaTheme() {
     clearThemes();
     theme = "atla";
+    body.classList.add("atlaBody");
+    matchDetails.classList.add("atlaMatchDetails");
+    simple.classList.add("atlaFire");
+    easy.classList.add("atlaWater");
+    normal.classList.add("atlaAir");
+    hard.classList.add("atlaEarth");
+    expert.classList.add("atlaFire");
+    gems.classList.add("atlaWater");
+    atla.classList.add("atlaAir");
+    hp.classList.add("atlaEarth");
+    christmas.classList.add("atlaFire");
+    cards.forEach(card => {
+        card.classList.add("atlaCard");
+    });
+    cardss.forEach(card => {
+        card.classList.add("atlaCards");
+    });
+    cardFace.forEach(card => {
+        card.classList.add("atlaCardFace");
+    });
+    details.forEach(detail => {
+        detail.classList.add("atlaDetails")
+    });
+    detailContainers.forEach(container => {
+        container.classList.add("atlaDetailContainer");
+    })
+    gameboards.forEach(gameboard => {
+        gameboard.classList.add("atlaGameboard");
+    })
+    texts.forEach(text => {
+        text.classList.add("atlaText");
+    })
+    titles.forEach(title => {
+        title.classList.add("atlaTitle");
+    })
     shuffleCard();
 }
 function christmasTheme() {
@@ -516,6 +461,9 @@ function christmasTheme() {
     texts.forEach(text => {
         text.classList.add("christmasText");
     })
+    titles.forEach(title => {
+        title.classList.add("christmasTitle");
+    })
     shuffleCard();
 }
 
@@ -524,7 +472,7 @@ function christmasTheme() {
 
 
 normalGamemode();
-hpTheme();
+atlaTheme();
 shuffleCard();
 
 restartBtn.addEventListener("click", shuffleCard);
