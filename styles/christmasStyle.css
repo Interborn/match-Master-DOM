@@ -1,0 +1,49 @@
+/* Christmas Game Theme Styling*/
+.christmasBody {
+    background-image: url("backgrounds/christmas.jpg") !important;
+    background-size: cover;
+  }
+  .christmasDifficulty {
+    background: #790000 !important;
+  }
+  .christmasTheme {
+    background: #710000 !important;
+  }
+  .christmasCards .christmasCard .christmasCardFace {
+    background: #2ca841 !important;
+    box-shadow: -1px 10px 27px -16px rgba(0,0,0,0.7);
+  }
+  .christmasDetails, .christmasMatchDetails {
+    background: #2ca841 !important;
+    border: 2px solid #790000 !important;
+  }
+  .christmasDetails button:hover, .christmasMatchDetails button:hover{
+    color: #710000 !important;
+    background: #2ca841 !important;
+    border: 2px solid #710000 !important;
+  }
+  .christmasMatchDetails button{
+    color: #fff !important;
+    background: #710000 !important;
+    border: 2px solid #fff !important;
+  }
+  .christmasDifficulty:hover, .christmasDifficulty:active {
+    color: #790000 !important;
+    background: #fff !important;
+  }
+  .christmasTheme:hover, .christmasTheme:active {
+    color: #710000 !important;
+    background: #fff !important;
+  }
+  .christmasGameboard, .christmasDetailContainer {
+    background: #d63939 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+    border: 4px solid #790000 !important;
+  }
+  .christmasText {
+    color: #fff !important;
+  }
+  .christmasTitle {
+    color: #fff !important;
+    text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
+  }

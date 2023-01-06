@@ -467,13 +467,32 @@ function christmasTheme() {
     shuffleCard();
 }
 
+function unblurCards() {
+    cards.forEach(card => {
+        card.style.filter = "blur(0px)";
+    })
+}
+function blurCards() {
+    cards.forEach(card => {
+        card.style.filter = "blur(10px)";
+    })
+}
+
+function main() {
+    normalGamemode();
+    gemsTheme();
+    shuffleCard();
+    blurCards();
+
+    let playerZero, playerOne, winner;
+    
+}
+
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
 
 
-normalGamemode();
-atlaTheme();
-shuffleCard();
+main();
 
 restartBtn.addEventListener("click", shuffleCard);
 simpleBtn.addEventListener("click", simpleGamemode);

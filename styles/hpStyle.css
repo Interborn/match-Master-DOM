@@ -1,0 +1,81 @@
+/* Harry Potter Game Theme Styling*/
+.hpBody {
+    background-image: url("../backgrounds/maradersmap.jpg") !important;
+    background-size: center-bottom;
+  }
+  .griffButtons {
+    background: #000 !important;
+    border-color: #d63939 !important;
+    color: #d63939 !important;
+  }
+  .huffButtons {
+    background: #000 !important;
+    border-color: #eac90e !important;
+    color: #eac90e !important;
+  }
+  .slyButtons {
+    background: #000 !important;
+    border-color: #17af24 !important;
+    color: #17af24 !important;
+  }
+  .ravButtons {
+    background: #000 !important;
+    border-color: #3d00f4 !important;
+    color: #3d00f4 !important;
+  }
+  .hpTheme {
+    background: rgb(80, 37, 37) !important;
+    border-color: #d63939 !important;
+    color: #d63939 !important;
+  }
+  .hpCards .hpCard .hpCardFace {
+    background-image: url("../backgrounds/slatetexture.webp") !important;
+    background-position: center;
+    /* background-size: 200%; */
+    box-shadow: -1px 10px 27px -16px rgba(0,0,0,0.7);
+  }
+  .hpMatchDetails, .hpDetails {
+    background-image: url("../backgrounds/slatetexture.webp") !important;
+    background-size: cover;
+    border: 2px solid transparent !important;
+  }
+  .hpMatchDetails button:hover{
+    color: #2d160bef !important;
+    background: #E9D3AC !important;
+    filter: blur(0px);
+  }
+  .hpMatchDetails button{
+    color: #E9D3AC !important;
+    background: transparent !important;
+    border: 2px solid #E9D3AC !important;
+    filter: blur(2px);
+  }
+  .griffButtons:hover, .griffButton:active, .slyButtons:hover, .slyButton:active, .huffButtons:hover, .huffButton:active, .ravButtons:hover, .ravButton:active {
+    color: #2d160bef !important;
+    background: transparent !important;
+    filter: blur(1px);
+  }
+  .hpTheme:hover, .hpTheme:active {
+    color: #2d160bef !important;
+    background: transparent !important;
+    filter: blur(1px);
+  }
+  .hpGameboard {
+    background-image: url("../backgrounds/houses.png") !important;
+    background-position: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+    border: 4px solid transparent !important;
+  }
+  .hpDetailContainer {
+    background: #2d160bef !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1) !important;
+    border: 4px solid transparent !important;
+  }
+  .hpText {
+    color: #E9D3AC !important;
+  }
+  .hpTitle {
+    color: #fff8ed !important;
+    text-shadow: -1px -1px 0 #2d160bef, 1px -1px 0 #2d160bef, -1px 1px 0 #2d160bef, 1px 1px 0 #2d160bef;
+  }
+  
