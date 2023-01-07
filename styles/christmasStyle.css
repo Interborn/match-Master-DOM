@@ -1,6 +1,6 @@
 /* Christmas Game Theme Styling*/
 .christmasBody {
-    background-image: url("backgrounds/christmas.jpg") !important;
+    background-image: url("../backgrounds/christmas.jpg") !important;
     background-size: cover;
   }
   .christmasDifficulty {

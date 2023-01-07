@@ -356,7 +356,6 @@ body{
   color: #6563ff;
   background: #fff;
   border: 2px solid #6563ff;
-  cursor: pointer;
   font-size: 14px;
   border-radius: 4px;
   padding: 4px 11px;
@@ -368,10 +367,29 @@ body{
 .playerChoiceDiv button {
   margin: 0.15vw;
   margin-top: 2vh;
+  cursor: pointer;
+}
+.playerChoiceDiv button:hover {
+  color: #fff !important;
+  background: #6563ff !important;
+  border: 2px solid #fff !important;
 }
 .p1, .p2 {
   margin: 2vw;
   text-align: center;
+}
+.beginButton {
+  font-size: 2em !important;
+  font-weight: 900;
+  border: 5px solid transparent !important;
+  cursor: pointer;
+  color: #fff !important;
+  background: #6563ff !important;
+}
+.beginButton:hover {
+  color: #6563ff !important;
+  background: #fff !important;
+  border: 5px solid #6563ff !important;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////// */

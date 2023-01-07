@@ -51,6 +51,12 @@ atlaBtn = document.querySelector(".atla");
 hpBtn = document.querySelector(".hp");
 gemsBtn = document.querySelector(".gems");
 christmasBtn = document.querySelector(".christmas");
+nameButton1 = document.querySelector(".nameButton1");
+nameButton2 = document.querySelector(".nameButton2");
+badgeButton1 = document.querySelector(".badgeButton1");
+badgeButton2 = document.querySelector(".badgeButton2");
+imageButton1 = document.querySelector(".imageButton1");
+imageButton2 = document.querySelector(".imageButton2");
 
 let maxTime = 30;
 let timeLeft = maxTime;
@@ -63,6 +69,8 @@ let disableDeck = false;
 let isPlaying = false;
 let isActiveZero = 0;
 let isActiveOne = 0;
+let themeChosen = false;
+let difficultyChosen = false;
 let cardOne, cardTwo, timer, gamemode, theme;
 
 // Initialize Timer and Syncronize with FE
@@ -477,33 +485,135 @@ function blurCards() {
         card.style.filter = "blur(10px)";
     })
 }
+// function disableButton(btn) {
+//     document.getElementById(btn.id).disabled = true;
+//     alert("Button has been disabled.");
+// }
 
 function main() {
+    
     normalGamemode();
     gemsTheme();
     shuffleCard();
     blurCards();
 
-    let playerZero, playerOne, winner;
-    
+    difficultyButtons.addEventListener("click", () => {
+        difficultyChosen = true;
+    });
+    themeButtons.addEventListener("click", () => {
+        themeChosen = true;
+    });
 }
-
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
 
+simpleBtn.addEventListener("click", () => {
+    simpleGamemode();
+    easyBtn.disabled = true;
+    normalBtn.disabled = true;
+    hardBtn.disabled = true;
+    expertBtn.disabled = true;
+    if (themeChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden");
+        unblurCards();
+    }
+});
+easyBtn.addEventListener("click", () => {
+    easyGamemode();
+    difficultyChosen = true;
+    simpleBtn.disabled = true;
+    normalBtn.disabled = true;
+    hardBtn.disabled = true;
+    expertBtn.disabled = true;
+    if (themeChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
+normalBtn.addEventListener("click", () => {
+    normalGamemode();
+    difficultyChosen = true;
+    simpleBtn.disabled = true;
+    easyBtn.disabled = true;
+    hardBtn.disabled = true;
+    expertBtn.disabled = true;
+    if (themeChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
+hardBtn.addEventListener("click", () => {
+    hardGamemode();
+    difficultyChosen = true;
+    simpleBtn.disabled = true;
+    easyBtn.disabled = true;
+    normalBtn.disabled = true;
+    expertBtn.disabled = true;
+    if (themeChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
+expertBtn.addEventListener("click", () => {
+    expertGamemode();
+    difficultyChosen = true;
+    simpleBtn.disabled = true;
+    easyBtn.disabled = true;
+    normalBtn.disabled = true;
+    hardBtn.disabled = true;
+    if (themeChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
+gemsBtn.addEventListener("click", () => {
+    gemsTheme();
+    themeChosen = true;
+    atlaBtn.disabled = true;
+    hpBtn.disabled = true;
+    christmasBtn.disabled = true;
+    if (difficultyChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
+atlaBtn.addEventListener("click", () => {
+    atlaTheme();
+    themeChosen = true;
+    gemsBtn.disabled = true;
+    hpBtn.disabled = true;
+    christmasBtn.disabled = true;
+    if (difficultyChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
+hpBtn.addEventListener("click", () => {
+    hpTheme();
+    themeChosen = true;
+    gemsBtn.disabled = true;
+    atlaBtn.disabled = true;
+    christmasBtn.disabled = true;
+    if (difficultyChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
+christmasBtn.addEventListener("click", () => {
+    christmasTheme();
+    themeChosen = true;
+    gemsBtn.disabled = true;
+    atlaBtn.disabled = true;
+    hpBtn.disabled = true;
+    if (difficultyChosen == true) {
+        document.querySelector(".introboard").classList.add("hidden"); 
+        unblurCards();
+    }
+});
 
 main();
 
 restartBtn.addEventListener("click", shuffleCard);
-simpleBtn.addEventListener("click", simpleGamemode);
-easyBtn.addEventListener("click", easyGamemode);
-normalBtn.addEventListener("click", normalGamemode);
-hardBtn.addEventListener("click", hardGamemode);
-expertBtn.addEventListener("click", expertGamemode);
-gemsBtn.addEventListener("click", gemsTheme);
-atlaBtn.addEventListener("click", atlaTheme);
-hpBtn.addEventListener("click", hpTheme);
-christmasBtn.addEventListener("click", christmasTheme);
 
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
